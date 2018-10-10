@@ -30,7 +30,7 @@ export class CityWeather extends React.Component {
         alert(`CityWeather:onSelectedCityChanged()-${city}`);
 
         // Obtain the weather for the selected city.
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0a08581bfb9186fe7865e40eecdb9f7d`)
+        axios.get(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0a08581bfb9186fe7865e40eecdb9f7d`)
         .then(
             (resp)=>{
                 console.log(resp);
