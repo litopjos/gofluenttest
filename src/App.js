@@ -7,7 +7,7 @@ import {CityWeather} from "./components/cityweather";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         <CityWeather/>
       </div>
     );

@@ -37,13 +37,15 @@ export class CityWeather extends React.Component {
 
                 {this.state.isLoading && 
                     (
-                        <h2>Loading...</h2>
+                        <div className="weather_data">
+                            <h2>Loading...</h2>
+                        </div>
                     )
                 }
 
                 {!this.state.isLoading && this.state.weather && 
                     (
-                        <div>
+                        <div className="weather_data">
                             <h2>temp: {this.state.weather.temp} celcius</h2>
                             <h2>description: {this.state.weather.description}</h2>
                             <h2>humidity: {this.state.weather.humidity}</h2>

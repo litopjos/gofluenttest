@@ -1,6 +1,24 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 50rem;
+  margin: 1.2rem auto;
+  padding: 0 1.2rem;
+  
 }
+
+.App {
+
+}
+
+.weather_data {
+  text-align: center
+}
+
+.label {
+  text-align: left;
+  font-weight: bold;
+
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
