@@ -88,7 +88,13 @@ export class CityWeather extends React.Component {
             }
         )
         .catch(
-            (error)=>alert(`ERROR: ${error}`)
+            (error)=>{
+                alert(`ERROR: ${error}`)
+                this.setState(
+                    ()=>({isLoading:false,weather:undefined})
+                )            
+            }
+
         )
     }
 
