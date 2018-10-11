@@ -1,4 +1,28 @@
+
+This app displays the current weather given a specified COUNTRY - REGION / PROVINCE - CITY.
+
+It leverages the following 3 main 3rd party api / components / libraries:
+
+-- api.openweathermap.org => REST api used to obtain weather data given a city name.
+
+-- country-state-city => ES5 library used to return country names and corresponding
+regions / provinces names along with city names.
+
+-- axios => 3rd party component used to make Ajax request to remote servers. 
+
+KNOWN ISSUES:
+-------------
++ Depending on the specified province / region, the library 'country-state-city' may not 
+return all the expected cities. There are cases where it does not return any at all.
+
++ When using city name as opposed to long/lat, the api.openweathermap.org does not seem
+to return multiple weather info for cases where there are more than one city with the
+same name.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md).
