@@ -16,7 +16,8 @@
 .label {
   text-align: left;
   font-weight: bold;
-
+  margin-top: 10px;
+  display:block;
 }
 
 
