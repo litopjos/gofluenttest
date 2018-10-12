@@ -48,8 +48,12 @@ export class SelectCountryStateCity extends React.Component {
         return (
             <div>
             
+                <div className="App-header">
+                    <h1>Weather Anyhere!</h1>
+                </div>
+
                 <div>
-                    <label className="label">Select Country:</label>
+                    <label className="label">1. Select Country:</label>
 
                     <Select
                         onChange = {this.onSelCountryChanged}
@@ -58,7 +62,7 @@ export class SelectCountryStateCity extends React.Component {
                 </div>
 
                 <div>
-                    <label className="label">Select State/Province/Region:</label>
+                    <label className="label">2. Select State/Province/Region:</label>
 
                     <Select
                         onChange = {this.onSelStateChanged}
@@ -67,7 +71,7 @@ export class SelectCountryStateCity extends React.Component {
                 </div>             
                 
                 <div>
-                    <label className="label">Select City:</label>
+                    <label className="label">3. Select City:</label>
 
                     <Select
                         onChange = {this.onSelCityChanged}
